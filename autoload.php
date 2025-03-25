@@ -1,6 +1,6 @@
 <?php 
 
-    echo __DIR__;
+    // echo __DIR__;
     spl_autoload_register(function($clase){
         
         $archivo = __DIR__."/".$clase.".php";
