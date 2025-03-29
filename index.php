@@ -23,6 +23,13 @@
 </head>
 <body>
     
+    <script>
+    Swal.fire({
+    title: "The Internet?",
+    text: "That thing is still around?",
+    icon: "question"
+    });
+</script>
 
     <?php require_once './app/views/inc/script.php'?>
 </body>
