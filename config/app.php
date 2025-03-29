@@ -1,6 +1,6 @@
 <?php 
 
-    const APP_URL = "http://localhost/ProjectMvc/";
+    const APP_URL = "http://localhost/ProjectMvcJadith/";
     const APP_NAME = "PROJECT MVC";
     const APP_SESSION_NAME = "CRUD";
 
