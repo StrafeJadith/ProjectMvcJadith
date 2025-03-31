@@ -22,15 +22,24 @@
     <?php require_once './app/views/inc/head.php'; ?>
 </head>
 <body>
-    
-    <script>
-    Swal.fire({
-    title: "The Internet?",
-    text: "That thing is still around?",
-    icon: "question"
-    });
-</script>
 
-    <?php require_once './app/views/inc/script.php'?>
+    <?php 
+
+        use app\controllers\viewController;
+
+        $viewController = new viewController();
+        $vista = $viewController->obtenerVistasControlador($url[0]);
+
+        if($vista == "login" || $vista == "404"){
+            
+            require_once "./app/views/content/".$vista."-view.php";
+
+        }else{
+
+            require_once "./app/views/inc/navbar.php";
+            require_once $vista;
+        }
+
+        require_once './app/views/inc/script.php'?>
 </body>
 </html>
